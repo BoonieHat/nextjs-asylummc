@@ -1,0 +1,15 @@
+{
+  "name": "MyAsylum",
+  "short_name": "MyAsylum",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A simple MyAsylum App.",
+  "icons": [
+    {
+      "src": "null",
+      "sizes": "48x48",
+      "type": "image/png"
+    }
+  ]
+}

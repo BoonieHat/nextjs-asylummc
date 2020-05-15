@@ -1,0 +1,34 @@
+{
+  "name": "myasylum",
+  "version": "3.0.0",
+  "main": "server/server.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server/server.js",
+    "build": "next build",
+    "start": "next build && node server/server.js"
+  },
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express-mysql-session": "^2.1.4",
+    "express-session": "^1.17.1",
+    "express.js": "^1.0.0",
+    "isomorphic-unfetch": "3.0.0",
+    "mysql": "^2.18.1",
+    "next": "9.4.0",
+    "passport": "^0.4.1",
+    "passport-steam": "^1.0.14",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "request": "^2.88.2",
+    "swr": "0.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "12.11.7",
+    "@types/react": "16.9.11",
+    "typescript": "3.6.4",
+    "nodemon": "^2.0.3"
+  }
+}
