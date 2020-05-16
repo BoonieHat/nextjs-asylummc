@@ -15,7 +15,7 @@ var testBanner2 = {
   backgroundSize: "5%"
 }
 
-export default function Article (props) {
+export default function (props) {
   return (
     <>
       <style jsx global>
@@ -30,17 +30,14 @@ export default function Article (props) {
       <div className={styles.contentRoot} style={testBanner2}>
 
         <div className={`${articleStyles.headerImage} ${styles.marginCenter}`}>
-          <img src="./testimage.jpg"></img>
+          <img src="./testimage2.jpg"></img>
         </div>
 
         <div className={articleStyles.container}>
           <div className={`${styles.marginCenter}`}>
-            <h1>Article Headline goes Here!</h1>
+            <h1>Jesse James Wanted!</h1>
             <p>
               Morbi vulputate viverra mauris eu eleifend. In a lacus vehicula lectus tristique accumsan. Nunc blandit arcu nec posuere tristique. Mauris molestie ornare lacus ac lobortis. In semper pretium enim eu egestas. Aenean eros enim, consectetur non vehicula efficitur, pretium nec ex. Fusce eu eleifend neque. Maecenas id elit dignissim, ultricies nibh et, ultrices sapien. Suspendisse potenti.
-            </p>
-            <p>
-              Donec vulputate nulla sit amet dignissim aliquam. Nulla at dapibus nulla. Sed quis ornare mi. Quisque et pellentesque est. Phasellus non est ut velit placerat lobortis. In hac habitasse platea dictumst. Duis quis dui ullamcorper, placerat lacus scelerisque, elementum orci. Integer viverra sit amet risus in semper. Phasellus id dignissim dui.
             </p>
             <p>
               Integer ut convallis lacus. Duis lobortis lectus sed gravida porttitor. Fusce vestibulum, est a porta blandit, sem tellus lobortis sapien, nec rhoncus ligula tellus nec augue. Morbi auctor tincidunt urna ac molestie. Nam id laoreet enim. Cras a sollicitudin massa, feugiat pharetra sem. Aenean dictum pellentesque nibh eu convallis. Duis consequat tempor pellentesque. Suspendisse potenti. Vivamus sit amet cursus nibh. Duis faucibus, ipsum nec luctus fringilla, ante libero semper ipsum, in elementum sapien nisl eget lorem. Curabitur quis justo nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.

@@ -43,9 +43,7 @@ export default function homePage () {
           <img src="./logoblack.png" style={{ width: "350px"}}></img>
           <h3>JOIN 24,295 OTHER UNIQUE PLAYERS</h3>
           <button className={`${styles.buttonPrimary} ${styles.mt1rem}`}>
-            <Link href="/playnow">
-              <a>PLAY NOW</a>
-            </Link>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">PLAY NOW</a>
           </button>
         </div>
       </div>
@@ -57,42 +55,42 @@ export default function homePage () {
 
             <div className={cardStyle.articles}>
               <Card
-                link={"/article"}
+                link={"/article1"}
                 image={"testimage"}
                 headline={"News is Breaking!"}
                 type={"BREAKING NEWS"}
                 date={"MAY 15 20"}
               />
               <Card
-                link={"/article"}
+                link={"/article2"}
                 image={"testimage2"}
                 headline={"Jesse James Wanted!"}
                 type={"REWARD $5,000"}
                 date={"MAY 14 20"}
               />
               <Card
-                link={"/article"}
+                link={"/article3"}
                 image={"testimage3"}
                 headline={"Really Catchy Headline"}
                 type={"UPDATE NEWS"}
                 date={"APRIL 10 20"}
               />
               <Card
-                link={"/article"}
+                link={"/article4"}
                 image={"testimage4"}
                 headline={"March will be extended to April 1st"}
                 type={"UPDATE NEWS"}
                 date={"APRIL 1 20"}
               />
               <Card
-                link={"/article"}
+                link={"/article5"}
                 image={"testimage5"}
                 headline={"Donald Trump found in a peach!"}
                 type={"FAKE NEWS"}
                 date={"MARCH 26 20"}
               />
               <Card
-                link={"/article"}
+                link={"/article6"}
                 image={"testimage6"}
                 headline={"A Really Really Long Headline for an Article"}
                 type={"BREAKING NEWS"}
