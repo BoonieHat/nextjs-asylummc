@@ -4,6 +4,8 @@ const handleTermination = require('./handleTermination')
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
 
+console.log(process.env.NODE_ENV)
+
 const express = require('express')
 const next = require('next')
 
@@ -12,7 +14,7 @@ const app = next({ dev })
 const handle = app.getRequestHandler()
 
 app.prepare().then(() => {
-  handleTermination()
+  //handleTermination()
 
   server.use('/api', require('../server/routes/api.js'))
 

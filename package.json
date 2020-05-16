@@ -4,9 +4,9 @@
   "main": "server/server.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon server/server.js",
+    "dev": "env NODE_ENV=development nodemon server/server.js",
     "build": "next build",
-    "start": "next build && node server/server.js"
+    "start": "env NODE_ENV=production next build && env NODE_ENV=production node server/server.js"
   },
   "dependencies": {
     "basic-auth": "^2.0.1",

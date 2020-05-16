@@ -3,9 +3,19 @@
   font-family: 'Inter', sans-serif;
   border-radius: 10px;
   transition: 0.5s;
-  background: #1FC4A6;
+  background: #111;
   grid-column-start: auto;
   grid-row-start: auto;
+  background-size: 200%;
+}
+
+.card:hover {
+ background-size: 300%;
+ transition: 0.5s;
+}
+
+.card a {
+  text-decoration: none;
 }
 
 .card article {
@@ -15,7 +25,7 @@
 
 .card h3 {
   color: #fff;
-  opacity: 90%;
+  opacity: 0.9;
 }
 
 .card .articleTitle {
@@ -23,6 +33,14 @@
   line-height: 1.125;
   font-weight: 700;
   letter-spacing: .05em;
+}
+
+.articles {
+  display: grid;
+  column-gap: 30px;
+  row-gap: 30px;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
 }
 
 .gradientOverlay {
@@ -38,53 +56,110 @@
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+  z-index: 10;
 }
 
 .gradientOverlay:hover {
   background-position: 0 100%;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out
+  transition: all .4s ease-in-out;
 }
 
 .gradientOverlay:hover h3 {
-  opacity: 100%;
+  opacity: 1;
 }
 
-.articles {
-  display: grid;
-  column-gap: 30px;
-  row-gap: 30px;
-  grid-template-columns: repeat(3,1fr);
-  width: 100%;
-}
-
-.card:nth-child(1) .gradientOverlay {
+.card:nth-child(6n+1) .gradientOverlay {
   background-image: linear-gradient(to bottom, rgba(255, 180, 92,0.65) 0%,rgba(233, 70, 70,0.9) 25%, rgba(255, 180, 92,0.9) 75%,rgba(233, 70, 70,1) 100%);
-  box-shadow: 0px 10px 10px rgba(233, 70, 70, 0.7);
+  box-shadow: 0px 5px 10px rgba(233, 70, 70, 0.7);
 }
 
-.card:nth-child(2) .gradientOverlay {
+.card:nth-child(6n+1) .gradientOverlay:hover {
+  box-shadow: 0px 10px 10px rgba(233, 70, 70, 0.9);
+}
+
+
+.card:nth-child(6n+2) .gradientOverlay {
   background-image: linear-gradient(to bottom,rgba(138, 119, 255,0.65) 0%,rgba(31, 196, 166,0.9) 25%,rgba(138, 119, 255,0.9) 75%,rgba(31, 196, 166,1) 100%);
-  box-shadow: 0px 10px 10px rgba(31, 196, 166, 0.7);
+  box-shadow: 0px 5px 10px rgba(31, 196, 166, 0.7);
 }
 
-.card:nth-child(3) .gradientOverlay {
+.card:nth-child(6n+2) .gradientOverlay:hover {
+  box-shadow: 0px 10px 10px rgba(31, 196, 166, 0.9);
+}
+
+.card:nth-child(6n+3) .gradientOverlay {
   background-image: linear-gradient(to bottom,rgba(255, 102, 102,0.65) 0%,rgba(112, 43, 224,0.9) 25%,rgba(255, 102, 102,0.9) 75%,rgba(112, 43, 224,1) 100%);
-  box-shadow: 0px 10px 10px rgba(112, 43, 224, 0.7);
+  box-shadow: 0px 5px 10px rgba(112, 43, 224, 0.7);
 }
 
-.card:nth-child(4) .gradientOverlay {
+.card:nth-child(6n+3) .gradientOverlay:hover {
+  box-shadow: 0px 10px 10px rgba(112, 43, 224, 0.9);
+}
+
+.card:nth-child(6n+4) .gradientOverlay {
   background-image: linear-gradient(to bottom, rgba(37, 170, 225,0.65) 0%,rgba(68, 129, 235, 0.9) 25%, rgba(37, 170, 225,0.9) 75%,rgba(68, 129, 235,1) 100%);
-  box-shadow: 0px 10px 10px rgba(68, 129, 235, 0.7);
+  box-shadow: 0px 5px 10px rgba(68, 129, 235, 0.7);
 }
 
-.card:nth-child(5) .gradientOverlay {
+.card:nth-child(6n+4) .gradientOverlay:hover {
+  box-shadow: 0px 10px 10px rgba(68, 129, 235, 0.9);
+}
+
+.card:nth-child(6n+5) .gradientOverlay {
   background-image: linear-gradient(to bottom,rgba(237, 110, 160,0.65) 0%,rgba(236, 140, 105,0.9) 25%,rgba(237, 110, 160,0.9) 75%,rgba(236, 140, 105,1) 100%);
-  box-shadow: 0px 10px 10px rgba(236, 140, 105, 0.7);
+  box-shadow: 0px 5px 10px rgba(236, 140, 105, 0.7);
 }
 
-.card:nth-child(6) .gradientOverlay {
+.card:nth-child(6n+5) .gradientOverlay:hover {
+  box-shadow: 0px 10px 10px rgba(236, 140, 105, 0.9);
+}
+
+
+.card:nth-child(6n+6) .gradientOverlay {
   background-image: linear-gradient(to bottom,rgba(16, 196, 101,0.65) 0%,rgba(237, 224, 36,0.9) 25%,rgba(16, 196, 101,0.9) 75%,rgba(237, 224, 36,1) 100%);
-  box-shadow: 0px 10px 10px rgba(237, 224, 36, 0.7);
+  box-shadow: 0px 5px 10px rgba(237, 224, 36, 0.7);
+}
+
+.card:nth-child(6n+6) .gradientOverlay:hover {
+  box-shadow: 0px 10px 10px rgba(237, 224, 36, 0.9);
+}
+
+
+@media only screen and (max-width: 1600px) {
+  .gradientOverlay {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .gradientOverlay {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card .gradientOverlay {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+  }
+  .card .articleTitle, .card article h3 {
+    font-size: 16px;
+  }
+  .articles {
+    column-gap: 15px !important;
+    row-gap: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .articles {
+    grid-template-columns: repeat(2,1fr) !important;
+  }
 }

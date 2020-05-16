@@ -6,6 +6,8 @@ import globalStyles from '../styles/global.js'
 import HtmlHead from "../components/Head";
 import Header from "../components/Header";
 
+import Footer from "../components/Footer";
+
 import Card from "../components/Card";
 
 import cardStyle from '../components/card.module.css'
@@ -20,7 +22,11 @@ var testBanner2 = {
   backgroundSize: "5%"
 }
 
-export default function homePage() {
+import testScript from '../libs/test'
+
+
+export default function homePage () {
+  testScript("HelloWorld");
   return (
     <>
       <style jsx global>
@@ -51,50 +57,58 @@ export default function homePage() {
 
             <div className={cardStyle.articles}>
               <Card
+                link={"/article"}
                 image={"testimage"}
-                headline={"Mitch can't find his tractor!"}
+                headline={"News is Breaking!"}
                 type={"BREAKING NEWS"}
                 date={"MAY 15 20"}
               />
               <Card
+                link={"/article"}
                 image={"testimage2"}
-                headline={"Mason LOST - Last seen in logs"}
+                headline={"Jesse James Wanted!"}
                 type={"REWARD $5,000"}
                 date={"MAY 14 20"}
               />
               <Card
+                link={"/article"}
                 image={"testimage3"}
                 headline={"Really Catchy Headline"}
                 type={"UPDATE NEWS"}
                 date={"APRIL 10 20"}
               />
               <Card
+                link={"/article"}
                 image={"testimage4"}
-                headline={"Removed MK from Asylum"}
+                headline={"March will be extended to April 1st"}
                 type={"UPDATE NEWS"}
                 date={"APRIL 1 20"}
               />
               <Card
+                link={"/article"}
                 image={"testimage5"}
                 headline={"Donald Trump found in a peach!"}
                 type={"FAKE NEWS"}
                 date={"MARCH 26 20"}
               />
               <Card
+                link={"/article"}
                 image={"testimage6"}
-                headline={"Mason whereabouts not known! Is he missing?"}
+                headline={"A Really Really Long Headline for an Article"}
                 type={"BREAKING NEWS"}
                 date={"JAN 1 20"}
               />
             </div>
 
-            <button className={`${styles.buttonPrimary} ${styles.mt2rem}`}>
+            <button className={`${styles.buttonPrimary} ${styles.mt1rem}`}>
               <a>LOAD MORE</a>
             </button>
 
           </div>
         </div>
       </div>
+
+      <Footer />
 
     </>
   )

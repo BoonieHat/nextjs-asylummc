@@ -39,6 +39,12 @@
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+@media only screen and (max-width: 1600px) {
+  .wrapperMain {
+    padding: 0px 0px !important;
+  }
+}
+
 .wrapperMain {
   flex: 1;
   display: flex;
@@ -64,14 +70,16 @@
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 700;
-  padding: 15px;
   border: 0px;
   letter-spacing: .1em;
+  outline: 0;
+  padding: 0px;
 }
 
 .buttonHeader a {
   color: #fff;
   text-decoration: none;
+  padding: 15px;
 }
 
 .buttonHeader:hover, .buttonHeader.active {
@@ -91,17 +99,19 @@
   font-size: 18px;
   font-weight: 900;
   height: 50px;
-  padding: 15px;
   border: 0px;
   letter-spacing: 0.1em;
   transition: 0.5s;
   top: 0;
   position: relative;
+  outline:0;
+  padding: 0px;
 }
 
 .buttonPrimary a {
   color: #fff;
   text-decoration: none;
+  padding: 15px;
 }
 
 .buttonPrimary:hover, .buttonPrimary.active {
@@ -133,7 +143,6 @@
 
 .marginCenter {
   text-align: center;
-  display: inline-block;
   margin: auto;
   position: relative;
 }
@@ -141,8 +150,9 @@
 .contentRoot {
   font-family: 'Inter', sans-serif;
   width: 100%;
-  height: 100vh;
-  box-shadow: 0px -20px 50px rgba(0, 0, 0, 0.4)
+  padding-bottom: 250px;
+  padding-top: 50px;
+  box-shadow: 0px -20px 50px rgba(0, 0, 0, 0.4);
 }
 
 .articles {
