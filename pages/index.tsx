@@ -103,7 +103,6 @@ export default function homePage () {
             <button className={`${styles.buttonPrimary} ${styles.mt1rem}`}>
               <a>LOAD MORE</a>
             </button>
-
           </div>
         </div>
       </div>
