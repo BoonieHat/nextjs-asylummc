@@ -1,57 +1,39 @@
-import Link from 'next/link'
-
-import styles from '../components/home.module.css'
-import globalStyles from '../styles/global.js'
-
+import Link from 'next/link';
+import styles from '../components/home.module.css';
+import globalStyles from '../styles/global.js';
+import cardStyle from '../components/card.module.css';
+import mainStyles from '../components/main.module.css';
 import HtmlHead from "../components/Head";
 import Header from "../components/Header";
-
-import Footer from "../components/Footer";
-
 import Card from "../components/Card";
-
-import cardStyle from '../components/card.module.css'
-
-var testBanner = {
-  backgroundImage: `url(./testimage7.jpg)`,
-  backgroundSize: "10%"
-}
-
-var testBanner2 = {
-  backgroundImage: `url(./testimage8.jpg)`,
-  backgroundSize: "5%"
-}
-
-import testScript from '../libs/test'
-
+import Footer from "../components/Footer";
+import testScript from '../libs/test';
+var testBanner2 = { backgroundImage: `url(./testimage8.jpg)`, backgroundSize: "5%" }
 
 export default function homePage () {
   testScript("HelloWorld");
   return (
     <>
-      <style jsx global>
-        {globalStyles}
-      </style>
-      <HtmlHead 
-        title={"Home"}
-        description={"Asylum Minecraft is home to fun Minecraft Minigames on our servers"}
-      />
+      <style jsx global>{globalStyles}</style>
+      <HtmlHead title={"Home"} description={"Asylum Minecraft is home to fun Minecraft Minigames on our servers"} />
       <Header />
-
-      <div className={styles.playNowContent} style={testBanner}>
-        <div className={styles.marginCenter}>
-          <img src="./logoblack.png" style={{ width: "350px"}}></img>
-          <h3>JOIN 24,295 OTHER UNIQUE PLAYERS</h3>
-          <button className={`${styles.buttonPrimary} ${styles.mt1rem}`}>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">PLAY NOW</a>
-          </button>
+      
+      <div className={mainStyles.asylumcarousel}>
+        <div className={mainStyles.asylumimg} style={{backgroundImage: `url(./testbanner.jpg)`}}>
+          <div className={styles.marginCenter}>
+            <img src="./logowhite.png" style={{ width: "350px" }}></img>
+            <h3>JOIN 24,295 OTHER UNIQUE PLAYERS</h3>
+            <button className={`${styles.buttonPrimary} ${styles.mt1rem}`}>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">PLAY NOW</a>
+            </button>
+          </div>
         </div>
       </div>
 
       <div className={styles.contentRoot} style={testBanner2}>
         <div className={styles.wrapperMain}>
           <div className={styles.marginCenter}>
-            <h1 className={`${styles.mt1rem} ${styles.mb1rem}`}>RECENT NEWS</h1>
+            <h1 className={`${styles.headline}`}>RECENT NEWS</h1>
 
             <div className={cardStyle.articles}>
               <Card

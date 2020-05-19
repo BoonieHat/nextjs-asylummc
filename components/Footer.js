@@ -12,7 +12,6 @@ function active(props) {
 export default (props) => (
   <div className={footerStyle.footer}>
     <div className={styles.wrapperMain}>
-
     </div>
   </div>
 );
