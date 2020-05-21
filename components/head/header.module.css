@@ -1,23 +1,37 @@
 .header {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  height: 60px;
   background-color: #2f195c;
   background-image: linear-gradient(to right, rgb(93, 40, 139) 0%,rgb(47, 25, 92) 100%);
   z-index: 1000;
   width: 100%;
   top: 0;
   position: fixed;
-  box-shadow: 0px 5px 10px rgba(74, 0, 224, 0);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.headerContainer {
+  padding: 0px 150px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .headerContainer { padding: 0px 100px !important; }
+}
+
+@media only screen and (max-width: 800px) {
+  .headerContainer { padding: 0px 50px !important; }
+  .buttonHeader { font-size: 14px !important; }
+}
+
+@media only screen and (max-width: 500px) {
+  .headerContainer { padding: 0px 10px !important; }
 }
 
 .headerLogo {
   margin-right: auto;
-  font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  padding: 15px;
+  padding: 15px 0px;
   text-align: center;
   line-height: 1;
   color: #fff;
@@ -39,12 +53,11 @@
 .buttonHeader a {
   color: #fff;
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
 }
 
 .buttonHeader:hover, .buttonHeader.active {
   transition: 0.5s;
-  border-radius: 0px 0px 10px 10px;
   background: rgb(254,72,72);
   background: linear-gradient(180deg, rgba(254,72,72,1) 0%, rgba(252,96,44,1) 100%);
 }

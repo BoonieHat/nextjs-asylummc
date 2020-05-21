@@ -1,6 +1,5 @@
-import styles from '../components/home.module.css'
-
-import footerStyle from '../components/footer.module.css'
+import styles from '../home.module.css'
+import footerStyle from '../footer/footer.module.css'
 
 function active(props) {
   if (props.store == "active") {

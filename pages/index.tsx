@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import styles from '../components/home.module.css';
 import globalStyles from '../styles/global.js';
-import cardStyle from '../components/card.module.css';
+import cardStyle from '../components/article/card.module.css';
 import mainStyles from '../components/main.module.css';
-import HtmlHead from "../components/Head";
-import Header from "../components/Header";
-import Card from "../components/Card";
-import Footer from "../components/Footer";
+import HtmlHead from "../components/head/head";
+import Header from "../components/head/header";
+import Card from "../components/article/card";
+import Footer from "../components/footer/footer";
 import testScript from '../libs/test';
 var testBanner2 = { backgroundImage: `url(./testimage8.jpg)`, backgroundSize: "5%" }
 
@@ -37,42 +37,42 @@ export default function homePage () {
 
             <div className={cardStyle.articles}>
               <Card
-                link={"/article1"}
+                link={"/article"}
                 image={"testimage"}
                 headline={"News is Breaking!"}
                 type={"BREAKING NEWS"}
                 date={"MAY 15 20"}
               />
               <Card
-                link={"/article2"}
+                link={"/article"}
                 image={"testimage2"}
                 headline={"Jesse James Wanted!"}
                 type={"REWARD $5,000"}
                 date={"MAY 14 20"}
               />
               <Card
-                link={"/article3"}
+                link={"/article"}
                 image={"testimage3"}
                 headline={"Really Catchy Headline"}
                 type={"UPDATE NEWS"}
                 date={"APRIL 10 20"}
               />
               <Card
-                link={"/article4"}
+                link={"/article"}
                 image={"testimage4"}
                 headline={"March will be extended to April 1st"}
                 type={"UPDATE NEWS"}
                 date={"APRIL 1 20"}
               />
               <Card
-                link={"/article5"}
+                link={"/article"}
                 image={"testimage5"}
                 headline={"Donald Trump found in a peach!"}
                 type={"FAKE NEWS"}
                 date={"MARCH 26 20"}
               />
               <Card
-                link={"/article6"}
+                link={"/article"}
                 image={"testimage6"}
                 headline={"A Really Really Long Headline for an Article"}
                 type={"BREAKING NEWS"}

@@ -1,5 +1,5 @@
-import cardStyle from './card.module.css'
-import homeStyle from './home.module.css' 
+import cardStyle from '../article/card.module.css'
+import homeStyle from '../home.module.css' 
 
 import Link from 'next/link'
 
