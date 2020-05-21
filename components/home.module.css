@@ -1,20 +1,12 @@
-.dinlineblock { display: inline-block; }
-.mt2rem { margin-top: 2rem; }
-.mt1rem { margin-top: 1rem; }
-.mb1rem { margin-bottom: 1rem; }
-.mr1rem { margin-right: 1rem; }
-.mtAuto { margin-top: auto; }
-.mbAuto { margin-bottom: auto; }
-
-@media only screen and (max-width: 1600px) {
-  .wrapperMain { padding: 0px 0px !important; }
-}
-
 .wrapperMain {
   flex: 1;
   display: flex;
   justify-content: flex-end;
   padding: 0px 300px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .wrapperMain { padding: 0px 0px !important; }
 }
 
 .buttonPrimary {
@@ -64,6 +56,7 @@
   padding-bottom: 250px;
   padding-top: 50px;
   box-shadow: 0px -20px 50px rgba(0, 0, 0, 0.4);
+  background-size: 5%;
 }
 
 .contentRoot .headline {

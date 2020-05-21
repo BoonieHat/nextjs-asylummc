@@ -8,7 +8,6 @@ import Header from "../components/head/header";
 import Card from "../components/article/card";
 import Footer from "../components/footer/footer";
 import testScript from '../libs/test';
-var testBanner2 = { backgroundImage: `url(./testimage8.jpg)`, backgroundSize: "5%" }
 
 export default function homePage () {
   testScript("HelloWorld");
@@ -23,14 +22,14 @@ export default function homePage () {
           <div className={styles.marginCenter}>
             <img src="./logowhite.png" style={{ width: "350px" }}></img>
             <h3>JOIN 24,295 OTHER UNIQUE PLAYERS</h3>
-            <button className={`${styles.buttonPrimary} ${styles.mt1rem}`}>
+            <button className={`${styles.buttonPrimary} ${mainStyles.mt2rem}`}>
               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">PLAY NOW</a>
             </button>
           </div>
         </div>
       </div>
 
-      <div className={styles.contentRoot} style={testBanner2}>
+      <div className={styles.contentRoot} style={{backgroundImage: `url(./testimage8.jpg)`}}>
         <div className={styles.wrapperMain}>
           <div className={styles.marginCenter}>
             <h1 className={`${styles.headline}`}>RECENT NEWS</h1>
@@ -80,7 +79,7 @@ export default function homePage () {
               />
             </div>
 
-            <button className={`${styles.buttonPrimary} ${styles.mt1rem}`}>
+            <button className={`${styles.buttonPrimary} ${mainStyles.mt2rem}`}>
               <a>LOAD MORE</a>
             </button>
           </div>

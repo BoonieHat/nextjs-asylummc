@@ -3,6 +3,25 @@
 .asylumjetblack { color: #000;}
 .asylumjetwhite { color: #fff;}
 
+.dinlineblock { display: inline-block; }
+
+.m2rem { margin: 2rem; }
+.m1rem { margin: 1rem; }
+.mt2rem { margin-top: 2rem; }
+.mt1rem { margin-top: 1rem; }
+.mb2rem { margin-bottom: 2rem; }
+.mb1rem { margin-bottom: 1rem; }
+.mr2rem { margin-left: 2rem; }
+.mr1rem { margin-left: 1rem; }
+.mr2rem { margin-right: 2rem; }
+.mr1rem { margin-right: 1rem; }
+
+.mAuto { margin: auto; }
+.mtAuto { margin-top: auto; }
+.mbAuto { margin-bottom: auto; }
+.mlAuto { margin-left: auto; }
+.mrAuto { margin-right: auto; }
+
 .asylumcarousel {
   display: flex;
   font-family: 'Inter', sans-serif;
@@ -22,8 +41,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center!important;
-  -ms-flex-pack: center!important;
-  justify-content: center!important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
   background-position-x: center;
 }
