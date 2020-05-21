@@ -8,13 +8,6 @@ import Header from "../components/head/header";
 
 import Footer from "../components/footer/footer";
 
-import articleStyles from "../components/article.module.css"
-
-var testBanner2 = {
-  backgroundImage: `url(./testimage8.jpg)`,
-  backgroundSize: "5%"
-}
-
 export default function PlayNow (props) {
   return (
     <>
@@ -26,6 +19,20 @@ export default function PlayNow (props) {
         description={"Asylum Minecraft is home to fun Minecraft Minigames on our servers"}
       />
       <Header />
+      <div style={{ backgroundImage: `url(./roll.jpg)`, height: "100vh" }}>
+        <div className={styles.marginCenter} style={{ paddingTop: "80px", borderRadius: "5px" }}>
+          <iframe
+            id="ytplayer"
+            width="860"
+            height="480"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+          >
+          </iframe>
+          <div style={{ color: "#fff", fontFamily: "Inter" }}>
+            <h1>This is just a placeholder page while I work on it. Enjoy Rick</h1>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

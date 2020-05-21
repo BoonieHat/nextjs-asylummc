@@ -16,7 +16,9 @@ export default (props) => (
       </div>
 
       <button className={`${headerStyles.buttonHeader}`}>
-        <a href="/play">PLAY NOW</a>
+        <Link href="/play">
+          <a>PLAY NOW</a>
+        </Link>
       </button>
 
       <button className={`${headerStyles.buttonHeader}`}>

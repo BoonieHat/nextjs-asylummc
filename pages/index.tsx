@@ -23,7 +23,9 @@ export default function homePage () {
             <img src="./logowhite.png" style={{ width: "350px" }}></img>
             <h3>JOIN 24,295 OTHER UNIQUE PLAYERS</h3>
             <button className={`${styles.buttonPrimary} ${mainStyles.mt2rem}`}>
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">PLAY NOW</a>
+              <Link href="/play">
+                <a>PLAY NOW</a>
+              </Link>
             </button>
           </div>
         </div>
