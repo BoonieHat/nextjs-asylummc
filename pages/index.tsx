@@ -21,7 +21,7 @@ export default function homePage () {
         <div className={mainStyles.asylumimg} style={{backgroundImage: `url(./testbanner.jpg)`}}>
           <div className={styles.marginCenter}>
             <img src="./logowhite.png" style={{ width: "350px" }}></img>
-            <h3>Hello</h3>
+            <h3>JOIN 24,295 OTHER UNIQUE PLAYERS</h3>
             <button className={`${styles.buttonPrimary} ${mainStyles.mt2rem}`}>
               <Link href="/play">
                 <a>PLAY NOW</a>
